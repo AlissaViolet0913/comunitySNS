@@ -27,7 +27,7 @@ describe("EventAllコンポーネント", () => {
       </MemoryRouter>,
     );
 
-    await act(async () => {});
+    // await act(async () => {});
 
     const islandName = screen.getByText("島 開催イベント");
     expect(islandName).toBeInTheDocument();

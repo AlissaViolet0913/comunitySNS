@@ -1,5 +1,5 @@
 import React from "react";
-import { render, act } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import LogSt from "../../../components/cookie/logSt";
