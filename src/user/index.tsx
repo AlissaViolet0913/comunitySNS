@@ -448,12 +448,12 @@ export default function UserEdit() {
                             <div className={styles.joinList}>
                               <p>参加している島</p>
                               {combi.map((item, index) => {
-                                if (item.islands) {
+                                if (item.islands && item.islands.id) {
                                   return (
                                     <Link
                                       to={`/island/${item.islands.id}`}
                                       className={styles.link}
-                                      key={index}
+                                      key={item.islands.id} // ここに一意のキーを追加
                                     >
                                       {item.islands.islandName}
                                     </Link>
@@ -466,14 +466,14 @@ export default function UserEdit() {
                             <div className={styles.joinList}>
                               <p>参加しているイベント</p>
                               {combi.map((item, index) => {
-                                if (item.events) {
+                                if (item.islands && item.islands.id) {
                                   return (
                                     <Link
-                                      to={`/event/${item.events.id}`}
+                                      to={`/island/${item.islands.id}`}
                                       className={styles.link}
-                                      key={index}
+                                      key={item.islands.id} // ここに一意のキーを追加
                                     >
-                                      {item.events.eventName}
+                                      {item.islands.islandName}
                                     </Link>
                                   );
                                 }
