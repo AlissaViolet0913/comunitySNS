@@ -187,6 +187,7 @@ export default function UserEdit() {
       );
     }
   };
+
   const check = () => {
     if (editMode && WatchConPw === undefined) {
       return setError("conPw", {
@@ -195,7 +196,6 @@ export default function UserEdit() {
       });
     }
   };
-
   return (
     <>
       <div className="loginPageButton">
@@ -448,7 +448,7 @@ export default function UserEdit() {
                             <div className={styles.joinList}>
                               <p>参加している島</p>
                               {combi.map((item, index) => {
-                                if (item.islands) {
+                                if (item.islands && item.islands.id) {
                                   return (
                                     <Link
                                       to={`/island/${item.islands.id}`}
@@ -459,17 +459,17 @@ export default function UserEdit() {
                                     </Link>
                                   );
                                 }
-                                return <></>;
+                                // return <></>;
                               })}
                             </div>
                             <br />
                             <div className={styles.joinList}>
                               <p>参加しているイベント</p>
                               {combi.map((item, index) => {
-                                if (item.events) {
+                                if (item.events && item.events.id) {
                                   return (
                                     <Link
-                                      to={`/event/${item.events.id}`}
+                                      to={`/island/${item.events.id}`}
                                       className={styles.link}
                                       key={index}
                                     >
@@ -477,7 +477,7 @@ export default function UserEdit() {
                                     </Link>
                                   );
                                 }
-                                return <></>;
+                                // return <></>;
                               })}
                             </div>
                           </div>
