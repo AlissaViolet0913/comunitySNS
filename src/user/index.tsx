@@ -187,6 +187,7 @@ export default function UserEdit() {
       );
     }
   };
+
   const check = () => {
     if (editMode && WatchConPw === undefined) {
       return setError("conPw", {
@@ -195,7 +196,6 @@ export default function UserEdit() {
       });
     }
   };
-
   return (
     <>
       <div className="loginPageButton">
@@ -453,31 +453,31 @@ export default function UserEdit() {
                                     <Link
                                       to={`/island/${item.islands.id}`}
                                       className={styles.link}
-                                      key={item.islands.id} // ここに一意のキーを追加
+                                      key={index}
                                     >
                                       {item.islands.islandName}
                                     </Link>
                                   );
                                 }
-                                return <></>;
+                                // return <></>;
                               })}
                             </div>
                             <br />
                             <div className={styles.joinList}>
                               <p>参加しているイベント</p>
                               {combi.map((item, index) => {
-                                if (item.islands && item.islands.id) {
+                                if (item.events && item.events.id) {
                                   return (
                                     <Link
-                                      to={`/island/${item.islands.id}`}
+                                      to={`/island/${item.events.id}`}
                                       className={styles.link}
-                                      key={item.islands.id} // ここに一意のキーを追加
+                                      key={index}
                                     >
-                                      {item.islands.islandName}
+                                      {item.events.eventName}
                                     </Link>
                                   );
                                 }
-                                return <></>;
+                                // return <></>;
                               })}
                             </div>
                           </div>

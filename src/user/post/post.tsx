@@ -29,7 +29,7 @@ export default function UserPost() {
             <h2>受信メッセージ✉️</h2>
 
             {messages.length === 0 ? (
-              <div>受信メッセージはありません</div>
+              <p>受信メッセージはありません</p>
             ) : (
               messages.map((message) => (
                 <div
