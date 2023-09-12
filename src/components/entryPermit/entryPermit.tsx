@@ -22,6 +22,7 @@ export default function EntryPermit({ table }: { table: string }) {
   //  ポストに届いている参加申請を取得
   useEffect(() => {
     fetchData({ table: table, paramsID: paramsID, setMessage: setMessage });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   //参加申請を送ってきたユーザーの情報を取得

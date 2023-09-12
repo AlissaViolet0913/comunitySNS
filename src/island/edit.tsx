@@ -83,6 +83,7 @@ export default function IslandEdit() {
   useEffect(() => {
     fetchIslandEditData();
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // データベースからislands情報を取得

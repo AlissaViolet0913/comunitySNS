@@ -36,6 +36,7 @@ export default function Message() {
 
   useEffect(() => {
     fetchUserMessagesData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchUserMessagesData = async () => {

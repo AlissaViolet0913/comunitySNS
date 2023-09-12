@@ -16,7 +16,7 @@ export default function UserRegistration() {
   //メールアドレスと社員番号が既に登録されているか確認するために取得する
   useEffect(() => {
     fetchUsers();
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     //ReactHookFormで使用
   }, []);
 
