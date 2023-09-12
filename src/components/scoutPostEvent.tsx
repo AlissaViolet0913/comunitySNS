@@ -10,11 +10,11 @@ import HandleEventJoin from "./handleEventJoin";
 export default function ScoutPostEvent({ table }: { table: string }) {
   LogSt();
 
-  // メッセージの型定義
-  interface Message {
-    id: number;
-    postedBy: number;
-  }
+  // // メッセージの型定義
+  // interface Message {
+  //   id: number;
+  //   postedBy: number;
+  // }
 
   const params = useParams();
   const paramsID = parseInt(params.id);
