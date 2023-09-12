@@ -22,6 +22,7 @@ function FetchJoindIslandEvent() {
 
   useEffect(() => {
     fetchUserInfo();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [combi]);
 
   const fetchUserInfo = async () => {

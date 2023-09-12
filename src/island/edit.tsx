@@ -27,7 +27,7 @@ export default function IslandEdit() {
   const [isDeleteCheckOpen, setIsDeleteCheckOpen] = useState(false);
   const [isAfterDeleteOpen, setIsAfterDeleteOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [chosenTag, setChosenTag] = useState([]);
+  const [, setChosenTag] = useState([]);
 
   const [islandName, setIslandName] = useState("");
   const [detail, setDetail] = useState("");

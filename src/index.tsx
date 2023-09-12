@@ -44,7 +44,11 @@ export default function Index() {
         {/* ロゴ */}
 
         <div className={styles.displayAll}>
-          <img src="/images/logo.png" className={styles.logo} />
+          <img
+            src="/images/logo.png"
+            className={styles.logo}
+            alt="Island Thumbnail"
+          />
 
           <div className={styles.information}>
             <h3 className={styles.news}>お知らせ</h3>

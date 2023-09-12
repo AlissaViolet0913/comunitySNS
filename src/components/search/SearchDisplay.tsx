@@ -26,6 +26,7 @@ export default function SearchDisplay({ word, radio }) {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word, radio]);
 
   const fetchData = async () => {

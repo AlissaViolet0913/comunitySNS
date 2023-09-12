@@ -79,6 +79,7 @@ const Chat = () => {
           setMessages(snapShots as chat[]);
         }, 400);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleNameBlur = async () => {

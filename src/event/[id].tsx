@@ -31,6 +31,7 @@ export default function EventDetail() {
     fetchEventDetailData();
     fetchIslandData(eventId);
     fetchEventPostData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [eventId, userId]);
 
   const fetchEventDetailData = async () => {
