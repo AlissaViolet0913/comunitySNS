@@ -167,7 +167,7 @@ export default function Message() {
       return;
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from("posts")
       .select("id")
       .eq("userID", userCookie)
