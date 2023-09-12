@@ -33,6 +33,7 @@ export default function IslandValueOption({
 
   useEffect(() => {
     fetchIslandData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // 選択項目

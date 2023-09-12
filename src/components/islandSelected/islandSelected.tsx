@@ -21,6 +21,7 @@ export default function SelectIsland({
   useEffect(() => {
     // selectタグの選択項目を取得
     FetchIslands(islandIDs, setIslands);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // 選択項目
