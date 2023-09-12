@@ -140,7 +140,7 @@ const Chat = () => {
           </div>
         ) : (
           <div className={styles.flex}>
-            <a onClick={pageBack} className={styles.link}>
+            <a href="#" onClick={pageBack} className={styles.link}>
               <p>＜</p>
             </a>
             <p className={styles.title}>{threadTitle}</p>

@@ -11,10 +11,10 @@ export default function ScoutPostIsland({ table }: { table: string }) {
   LogSt();
 
   // メッセージの型定義
-  interface Message {
-    id: number;
-    postedBy: number;
-  }
+  // interface Message {
+  //   id: number;
+  //   postedBy: number;
+  // }
 
   const params = useParams();
   const paramsID = parseInt(params.id);
