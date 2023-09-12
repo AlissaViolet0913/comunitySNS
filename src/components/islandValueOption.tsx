@@ -121,7 +121,6 @@ export default function IslandValueOption({
       <SelectedIslandJoin
         fetchEventID={fetchEventID}
         setIslandJoinID={setIslandJoinID}
-        setEventJoin={setEventJoin}
       />
     </>
   );
