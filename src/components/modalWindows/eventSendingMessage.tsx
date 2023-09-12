@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../../styles/createSendingMessage.module.css";
 import { supabase } from "../../createClient";
 import { useParams } from "react-router-dom";
@@ -10,10 +10,8 @@ import FetchPost from "./fetchPost";
 
 export default function EventSendingMessage({
   closeModal,
-  table,
 }: {
   closeModal: () => void;
-  table: string;
 }) {
   const [message, setMessage] = useState("");
   const [postedID, setPostedID] = useState(null);
@@ -28,7 +26,7 @@ export default function EventSendingMessage({
     fetchPostData();
     fetchEventNameData();
     fetchEventPostData();
-  }, []);
+  }, [paramsID, userID]);
 
   // postedByに入れるため、送信する側のpostIDを取得する
   const fetchPostData = async () => {
@@ -94,4 +92,3 @@ export default function EventSendingMessage({
     </>
   );
 }
-
