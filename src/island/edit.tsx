@@ -1,7 +1,7 @@
 import React, { useState, useEffect, SyntheticEvent } from "react";
 import styles from "../styles/island/islandEdit.module.css";
 import CreateDeletePage from "../components/modalWindows/createDeletePage";
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 import AddTag from "../components/createIsland/addtag/addtag";
 import LogSt from "../components/cookie/logSt";
 import { useNavigate, useParams } from "react-router-dom";

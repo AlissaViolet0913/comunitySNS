@@ -2,7 +2,7 @@ import { useState, useEffect, ReactNode } from "react";
 import styles from "../styles/newUser.module.css";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 export default function UserRegistration() {
   const navigate = useNavigate();

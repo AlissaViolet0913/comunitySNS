@@ -1,7 +1,7 @@
 // 島作成する
 
 import { useNavigate } from "react-router-dom";
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 import { useState } from "react";
 import GetCookieID from "../../components/cookie/getCookieId";
 

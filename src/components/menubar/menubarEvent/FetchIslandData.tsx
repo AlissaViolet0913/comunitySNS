@@ -1,6 +1,6 @@
 // 表示しているイベントの情報をeventに挿入
 
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 
 export interface Event {
   eventName: string;

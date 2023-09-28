@@ -1,6 +1,6 @@
 // selectタグの選択項目を取得
 
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchIslands(islandIDs, setIslands) {
   const fetchIslands = async () => {

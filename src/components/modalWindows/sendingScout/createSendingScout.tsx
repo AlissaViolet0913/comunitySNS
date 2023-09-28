@@ -1,5 +1,5 @@
 import styles from "../../../styles/createSendingScout.module.css";
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 import { useEffect, useState } from "react";
 import { newUsersData } from "../../../types/sendScout";
 import { useParams } from "react-router-dom";

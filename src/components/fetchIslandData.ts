@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // fetchIslandData関数の定義
 export default async function FetchIslandData(

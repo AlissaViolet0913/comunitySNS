@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 import { Island } from "../../types/members";
 import { Event } from "../../types/members";
 import GetCookieID from "../cookie/getCookieId";

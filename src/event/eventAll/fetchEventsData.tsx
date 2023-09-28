@@ -1,5 +1,5 @@
 // イベントのデータを取得する関数
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchEventsData(events, setEvents) {
   const fetchEventsData = async () => {

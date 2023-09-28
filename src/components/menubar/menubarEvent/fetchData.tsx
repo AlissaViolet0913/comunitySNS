@@ -1,5 +1,5 @@
 // ユーザーが表示しているイベントに参加しているかどうかチェック
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 
 export default async function FetchData(userID: string, paramsID: number) {
   try {

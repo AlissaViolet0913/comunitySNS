@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // 削除完了ウィンドウを閉じると、データが論理削除されてトップ画面に遷移する
 export default async function IslandDone(

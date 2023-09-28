@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 import { Event, Island } from "../types/members";
 
 //該当する島かイベントの情報を取得する関数

@@ -2,7 +2,7 @@ import { useState, useEffect, ReactNode } from "react";
 import styles from "../styles/user/userEdit.module.css";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 import DeleteButton from "../components/deleteAccount/deleteAcount";
 import GetCookieID from "../components/cookie/getCookieId";
 import SubFetchIsEve from "../components/hooks/SubFetchIsEve";

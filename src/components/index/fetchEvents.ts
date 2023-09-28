@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export const fetchEvents = async (setEvents) => {
   const { data, error } = await supabase
