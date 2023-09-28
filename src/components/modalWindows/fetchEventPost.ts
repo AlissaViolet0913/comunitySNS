@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default async function FetchEventPost(paramsID, setPostID) {
   const { data: post, error: postError } = await supabase
@@ -17,4 +17,4 @@ export default async function FetchEventPost(paramsID, setPostID) {
   } else {
     console.log("該当する投稿が見つかりませんでした");
   }
-};
+}

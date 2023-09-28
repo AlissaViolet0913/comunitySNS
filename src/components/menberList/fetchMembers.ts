@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 import { Entryusers } from "../../types/members";
 import { getLoginUser } from "./getLoginUser";
 

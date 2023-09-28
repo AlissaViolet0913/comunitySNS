@@ -1,4 +1,4 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 import { Event } from "../types/members";
 
 export default async function FetchEventDetail(

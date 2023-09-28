@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 import { Tags } from "../../types/search";
 
 //島・タグ情報を取得・成形する関数

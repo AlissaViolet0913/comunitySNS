@@ -1,4 +1,4 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 export const deleteThread = async (threadId) => {
   try {

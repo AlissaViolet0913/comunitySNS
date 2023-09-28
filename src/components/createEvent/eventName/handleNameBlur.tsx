@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { supabase } from "../../../createClient";
+import { supabase } from "../../../supabase";
 
 export default function HandleNameBlur({
   eventName,

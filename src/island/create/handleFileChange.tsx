@@ -1,6 +1,6 @@
 // 画像ファイル選択したら、表示画像に反映
 
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default async function HandleFileChange(
   event: React.ChangeEvent<HTMLInputElement>,

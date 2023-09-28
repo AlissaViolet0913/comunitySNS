@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 // データベースから全ユーザー名前取得
 
 export default function FetchUsers(ConvertKanaJ, setUserOptions) {

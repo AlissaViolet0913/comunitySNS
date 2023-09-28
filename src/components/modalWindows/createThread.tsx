@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "../../styles/createThread.module.css";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default function CreateThread({
   closeModal,

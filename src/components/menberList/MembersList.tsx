@@ -1,7 +1,7 @@
 import styles from "../../styles/membersList.module.css";
 import { useEffect, useState } from "react";
 import { Event, Island, Entryusers, User } from "../../types/members";
-import { supabase } from "../../createClient.js";
+import { supabase } from "../../supabase.js";
 import GetCookieID from "../cookie/getCookieId";
 import { fetchMembers } from "./fetchMembers";
 import { ButtonSwitching } from "./ButtonSwiching";

@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 import { User } from "../../types/members";
 
 //ログインユーザーのデータを取得

@@ -1,10 +1,10 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 // selectタグの選択項目を取得
 export default async function FetchIsland(setIslands, islandID) {
-    const islandID_N = Number(islandID);
-    
-    const { data, error } = await supabase
+  const islandID_N = Number(islandID);
+
+  const { data, error } = await supabase
     .from("islands")
     .select("id, islandName")
     .eq("status", false);
@@ -15,4 +15,4 @@ export default async function FetchIsland(setIslands, islandID) {
     const filteredData = data.filter((island) => island.id !== islandID_N);
     setIslands(filteredData);
   }
-};
+}

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default function DeleteDone({ userId, inputValue }) {
   const navigate = useNavigate();

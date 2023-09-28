@@ -1,6 +1,6 @@
 // 表示している島の情報をislandに挿入
 
-import { supabase } from "../../../createClient";
+import { supabase } from "../../../supabase";
 
 export default async function FetchIslandData(paramsID) {
   try {

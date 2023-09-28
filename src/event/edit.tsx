@@ -3,7 +3,7 @@ import MenubarEvent from "../components/menubar/menubarEvent/menubarEvent";
 import styles from "../styles/eventDetail.module.css";
 import LogSt from "../components/cookie/logSt";
 import { useNavigate, useParams } from "react-router-dom";
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 import CreateDeletePage from "../components/modalWindows/deleteEvent";
 import CreateDeleteCheck from "../components/modalWindows/deleteEventCheck";
 import CreateAfterDelete from "../components/modalWindows/deleteEventAfter";
