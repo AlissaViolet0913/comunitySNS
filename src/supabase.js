@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-const supabaseAnonKey = process.env.RAECT_APP_SUPABASE_ANON_KEY;
+const supabaseAnonKey = process.env.RAECT_APP_SUPABASE_API_KEY;
 
 // Project URL, API KEYの設定
 // export const supabase = createClient(
