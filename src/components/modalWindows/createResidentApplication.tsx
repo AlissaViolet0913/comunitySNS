@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "../../styles/createSendingMessage.module.css";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 import { useParams } from "react-router-dom";
 import GetCookieID from "../cookie/getCookieId";
 import FetchPost from "./fetchPost";

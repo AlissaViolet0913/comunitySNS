@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 import { thread } from "../../types/thread";
 
 function FetchIslandThreads(id: number, eqName: string) {

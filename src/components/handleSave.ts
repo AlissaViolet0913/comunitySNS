@@ -1,17 +1,24 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
-export default async function HandleSave(eventName, startDate, endDate, eventDetail, imageUrl, fetchEventID) {
-    await supabase
-      .from("events")
-      .update([
-        {
-          eventName: eventName,
-          startDate: startDate,
-          endDate: endDate,
-          detail: eventDetail,
-          thumbnail: imageUrl,
-        },
-      ])
-      .eq("id", fetchEventID);
-      console.log("Data updated successfuly.");
-};
+export default async function HandleSave(
+  eventName,
+  startDate,
+  endDate,
+  eventDetail,
+  imageUrl,
+  fetchEventID,
+) {
+  await supabase
+    .from("events")
+    .update([
+      {
+        eventName: eventName,
+        startDate: startDate,
+        endDate: endDate,
+        detail: eventDetail,
+        thumbnail: imageUrl,
+      },
+    ])
+    .eq("id", fetchEventID);
+  console.log("Data updated successfuly.");
+}

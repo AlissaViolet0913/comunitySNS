@@ -1,5 +1,5 @@
 // 島の名前を取得する関数
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default function FetchIslandName(islandName, setIslandName, paramsID) {
   const fetchIslandName = async () => {

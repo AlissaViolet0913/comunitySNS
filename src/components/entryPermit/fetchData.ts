@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export async function fetchData({ table, paramsID, setMessage }) {
   const { data, error } = await supabase

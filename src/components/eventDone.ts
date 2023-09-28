@@ -1,7 +1,13 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 // 削除完了ウィンドウを閉じると、データが論理削除されてトップ画面に遷移する
-export default async function  EventDone(eventID, inputValue, fetchEventID, setIsAfterDeleteOpen, navigate) {
+export default async function EventDone(
+  eventID,
+  inputValue,
+  fetchEventID,
+  setIsAfterDeleteOpen,
+  navigate,
+) {
   setIsAfterDeleteOpen(false);
 
   // posts, events, userEntryStatusテーブルのstatusをtrueに変更
@@ -43,4 +49,4 @@ export default async function  EventDone(eventID, inputValue, fetchEventID, setI
       window.location.reload();
     }
   }
-};
+}

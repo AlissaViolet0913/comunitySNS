@@ -1,4 +1,4 @@
-import { supabase } from "../../../createClient";
+import { supabase } from "../../../supabase";
 
 export default async function FetchData(userID, setHasNewMessage) {
   try {

@@ -1,9 +1,9 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 // 画像ファイル選択したら、表示画像に反映
 export default async function HandleFileChange(
   event: React.ChangeEvent<HTMLInputElement>,
-  setImageUrl: React.Dispatch<React.SetStateAction<string>>
+  setImageUrl: React.Dispatch<React.SetStateAction<string>>,
 ) {
   if (!event.target.files || event.target.files.length === 0) {
     // 画像が選択されていないのでreturn
@@ -25,4 +25,4 @@ export default async function HandleFileChange(
     .getPublicUrl(filePath);
 
   setImageUrl(data.publicUrl);
-};
+}

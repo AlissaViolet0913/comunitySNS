@@ -1,5 +1,5 @@
 import { Message } from "../../types/entryPermit";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 //messageを送ったユーザーを取得
 export const getUsers = async ({

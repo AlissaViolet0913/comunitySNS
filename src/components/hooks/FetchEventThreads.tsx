@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 function FetchEventThreads(id: number, eqName: string) {
   const [threads, setThreads] = useState([]);

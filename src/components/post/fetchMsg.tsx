@@ -1,4 +1,4 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export const fetchMsg = async ({ paramsID, setMessages }) => {
   // 島ポスト番号を検索

@@ -1,7 +1,12 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 // fetchEventData関数の定義
-export default async function FetchEventData(paramsID, setEventName, setEvent, setIsButtonsVisible){
+export default async function FetchEventData(
+  paramsID,
+  setEventName,
+  setEvent,
+  setIsButtonsVisible,
+) {
   // messages テーブルから該当のデータを取得
   const { data: message, error: messagesError } = await supabase
     .from("messages")
@@ -44,4 +49,4 @@ export default async function FetchEventData(paramsID, setEventName, setEvent, s
 
   // ボタンの表示状態を設定
   setIsButtonsVisible(!message.isAnswered);
-};
+}

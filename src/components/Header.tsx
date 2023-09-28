@@ -3,7 +3,7 @@ import styles from "../styles/Header.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import FetchJoindIslandEvent from "./hooks/FetchJoindIslandEvent";
 import GetCookieID from "./cookie/getCookieId";
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
 const Header = () => {
   const [selectedRadio, setSelectedRadio] = useState("all");

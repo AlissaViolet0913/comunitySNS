@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 import styles from "../styles/island/createIsland.module.css";
 
 export default function SelectedIslandJoin({ fetchEventID, setIslandJoinID }) {

@@ -1,6 +1,10 @@
-import { supabase } from "../createClient";
+import { supabase } from "../supabase";
 
-export default async function FetchEventPosts(userId, eventId, setAlreadyError) {
+export default async function FetchEventPosts(
+  userId,
+  eventId,
+  setAlreadyError,
+) {
   // ユーザーのポスト番号取得
   const { data, error } = await supabase
     .from("posts")
@@ -42,4 +46,4 @@ export default async function FetchEventPosts(userId, eventId, setAlreadyError) 
   if (messageError) {
     console.log("ユーザー送信メッセージ一覧取得失敗");
   }
-};
+}

@@ -1,10 +1,10 @@
-import { supabase } from "../../createClient";
+import { supabase } from "../../supabase";
 
 export default function NextIslandHandler(
-    inputValue,
-    id,
-    nextOpen2,
-    setNotExist
+  inputValue,
+  id,
+  nextOpen2,
+  setNotExist,
 ) {
   return async () => {
     if (inputValue) {
