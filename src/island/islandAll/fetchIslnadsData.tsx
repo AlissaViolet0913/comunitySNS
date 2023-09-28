@@ -1,5 +1,5 @@
 // 島のデータを取得する関数
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchIslandsData(islands, setIslands) {
   const fetchIslandsData = async () => {

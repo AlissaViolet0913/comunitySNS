@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 export default async function HandleReject(paramsID, id, setIsButtonsVisible) {
   const { error: updateError } = await supabase

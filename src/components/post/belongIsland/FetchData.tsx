@@ -1,4 +1,4 @@
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 
 export default async function FetchData(userID) {
   try {

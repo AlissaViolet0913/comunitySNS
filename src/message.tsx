@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { supabase } from "./supabase";
+import { supabase } from "./createClient";
 import { format } from "date-fns";
 import { useCookies } from "react-cookie";
 import LogSt from "./components/cookie/logSt";

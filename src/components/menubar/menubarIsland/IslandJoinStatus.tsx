@@ -1,7 +1,7 @@
 // ユーザーが表示している島に参加しているかどうかチェック
 
 import { useEffect } from "react";
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 
 export default function IslandJoinStatus({ userID, paramsID, setIsJoined }) {
   useEffect(() => {

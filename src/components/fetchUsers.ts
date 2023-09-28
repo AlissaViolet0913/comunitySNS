@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // データベースから全タグ名取得
 export default async function FetchUsers(setTagOptions) {

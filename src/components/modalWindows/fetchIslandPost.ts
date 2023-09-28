@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 // 島かイベントのポストを取得、postIDに格納
 export default async function FetchIslandPost(table, paramsID, setPostID) {

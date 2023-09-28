@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 // スレッド名編集「保存」ボタン
 export const handleSaveClick = async ({

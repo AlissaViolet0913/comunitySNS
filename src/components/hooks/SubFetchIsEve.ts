@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 import { Island, Event } from "../../types/members";
 
 export default function SubFetchIsEve({

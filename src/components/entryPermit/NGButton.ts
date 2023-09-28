@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export async function NGButton(messageID: number) {
   const { error: updateError } = await supabase

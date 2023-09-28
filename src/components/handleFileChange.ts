@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // 画像ファイル選択したら、表示画像に反映
 export default async function HandleFileChange(

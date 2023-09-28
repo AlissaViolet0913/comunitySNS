@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 // 既読に変更し、メッセージ全文確認ページへ遷移
 export const readHandler = async (message, navigate) => {

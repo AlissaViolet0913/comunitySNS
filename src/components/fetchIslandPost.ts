@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // すでに住民申請を送っているか確認確認
 export default async function FetchIslandPost(

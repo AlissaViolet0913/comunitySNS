@@ -1,4 +1,4 @@
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../createClient";
 
 //スカウトを送る
 export const scoutHandler = async ({

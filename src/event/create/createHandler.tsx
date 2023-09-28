@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export function useCreateEventHandler() {
   const navigate = useNavigate();

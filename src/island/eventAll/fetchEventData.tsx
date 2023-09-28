@@ -1,6 +1,6 @@
 // 島のイベントを取得
 
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchEventDataIsland({ paramsID, setEvents, events }) {
   const fetchEventData = async () => {

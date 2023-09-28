@@ -1,4 +1,4 @@
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 // messagesテーブルにメッセージを保存
 export default async function SendMessage(

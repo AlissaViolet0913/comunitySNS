@@ -1,4 +1,4 @@
-import { supabase } from "../supabase";
+import { supabase } from "../createClient";
 
 // selectタグの選択項目を取得
 export default async function FetchIsland(setIslands, islandID) {

@@ -1,6 +1,6 @@
 //メッセージ受信
 
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchMsg(userID, setMessages) {
   const fetchMsg = async () => {

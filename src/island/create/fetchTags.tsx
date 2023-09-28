@@ -1,6 +1,6 @@
 // データベースから全タグ名取得
 
-import { supabase } from "../../supabase";
+import { supabase } from "../../createClient";
 
 export default function FetchTags(setTagOptions) {
   const fetchTags = async () => {
